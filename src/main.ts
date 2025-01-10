@@ -38,6 +38,12 @@ const planet = await getPlanet(1);
 console.log(planet.name);
 
 // öva = skriv en getPerson osv
+const getPerson = async (name:string) => {
+	const person = await fetch (`https://swapi.py4e.com/api/planets`)
+	const persons = await person.json();
+	return persons;
+}
+getPerson ();
 
 // === DOM-koden
 
